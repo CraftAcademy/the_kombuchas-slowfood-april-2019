@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.4.1'
+ruby '2.6.3'
 
 gem 'rails', '~> 5.2.0'
 gem "haml-rails", "~> 1.0"
@@ -24,6 +24,7 @@ group :development, :test do
   gem 'database_cleaner'
   gem 'chromedriver-helper'
   gem 'selenium-webdriver'
+  gem 'capybara'
 end
 
 group :development do
