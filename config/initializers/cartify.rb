@@ -1,5 +1,6 @@
 # 'product_class' is the product model name, change it to the class you are using!
-Cartify.product_class = 'Product'
+# this line used to say .product_class = 'Product' but I changed it to our product model, MenuItem so we could migrate the DB
+Cartify.product_class = 'MenuItem'
 
 # 'user_class' is the order owner model name, change it to the class you are using!
 Cartify.user_class = 'User'
