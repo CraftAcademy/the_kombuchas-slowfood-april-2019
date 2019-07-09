@@ -8,10 +8,3 @@ Scenario:
     Then I should see "Kibbles and Bites"
     And I should see "Menu"
     And I should see "Kitty Appetizers"
-    And I should see "Smoked salmon"
-    # And I should see "Doggy Delights"
-    # And I should see "Entrecot"
-    # And I should see "Tiny Treats"
-
-# Scenario: 
-#     Then I click "Add to plate"
