@@ -11,7 +11,7 @@ Feature: Visitor can add to order
 
     Scenario: Visitor adds an appetizer to their cart
         Then I should see "Pupperoni"
-        When I click on the "Add to Order" button
+        When I click on the "Add to Order" link
         Then I should be on the "Order List" page
         And I should see "Order Items"
         And I should see "Pupperoni"

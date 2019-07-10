@@ -8,7 +8,7 @@ Given("the following menu item exist") do |table|
     end
 end
 
-When("I click on the {string} button") do |string|
+When("I click on the {string} link") do |string|
     first(:link, string).click
   end
   
