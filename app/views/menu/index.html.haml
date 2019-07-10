@@ -1,21 +1,22 @@
 %h1 Kibbles n' Bites
-
+%br
 %h2 Menu
-
+%hr
 %h3 Kitty Appetizers
+%hr
 
 - @menu_items.each do |menu_item|
   %ul
     %strong= menu_item.name
     %li= menu_item.description
-    %li= menu_item.price
+    %li= menu_item.price 
+    %span SEK
     %li= menu_item.animal
 
     /= This is a link helper "add_to_cart(product, quantity, button_name) to each menu item"
     /= not sure how to connect to Order List yet
     %p The below should be an 'add to cart' link
     add_to_cart(menu_item.id, 1, button_name)
-    %br
-    %br
+    %hr
 
 
