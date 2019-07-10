@@ -18,13 +18,13 @@
 
 
 
--# - if(@cartify_order_items != nil)
--#   = @cartify_order_items.each do |cartify_order_items|
--#     %p= cartify_order_items.quantity
--#     %p= cartify_order_items.unit_price
--#     %p= cartify_order_items.menuitem_id
--# - else 
--#   = "Your cart is empty!"
+- if(@cartify_order_items != nil)
+  = @cartify_order_items.each do |cartify_order_items|
+    %p= cartify_order_items.quantity
+    %p= cartify_order_items.unit_price
+    %p= cartify_order_items.menuitem_id
+- else 
+  = "Your cart is empty!"
 
 
--# = link_to(checkout_link)
+= link_to(checkout_link)
