@@ -11,6 +11,7 @@ Feature: Visitor can add to order
 
     Scenario: Visitor adds an appetizer to their cart
         Then I should see "Pupperoni"
+        Then I should see "Add to Order"
         When I click on the "Add to Order" link
         Then I should see "Current Order: "
         And I should see "Pupperoni"
