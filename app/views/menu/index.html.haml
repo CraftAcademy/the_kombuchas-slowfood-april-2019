@@ -16,7 +16,18 @@
     /= This is a link helper "add_to_cart(product, quantity, button_name) to each menu item"
     /= not sure how to connect to Order List yet
     %p The below should be an 'add to cart' link
-    = link_to(add_to_cart(menu_item, 1, 'Add to Cart'))
+    = link_to(add_to_cart(menu_item, 1, 'Add to Order'))
     %hr
 
 
+
+- if(@cartify_order_items != nil)
+  = @cartify_order_items.each do |cartify_order_items|
+    %p= cartify_order_items.quantity
+    %p= cartify_order_items.unit_price
+    %p= cartify_order_items.menuitem_id
+- else 
+  = "Your cart is empty!"
+
+
+= link_to(checkout_link)

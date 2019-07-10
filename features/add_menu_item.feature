@@ -12,8 +12,7 @@ Feature: Visitor can add to order
     Scenario: Visitor adds an appetizer to their cart
         Then I should see "Pupperoni"
         When I click on the "Add to Order" link
-        Then I should be on the "Order List" page
-        And I should see "Order Items"
+        Then I should see "Current Order: "
         And I should see "Pupperoni"
         And I should see "Order Total"
         Then I should see '100'
