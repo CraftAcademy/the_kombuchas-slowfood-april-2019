@@ -8,6 +8,6 @@ Given("the following menu item exist") do |table|
     end
 end
 
-When("I click {string}") do |string|
-    pending # Write code here that turns the phrase above into concrete actions
+When("I click {string}") do |text|
+    click_link_or_button(text)
 end
