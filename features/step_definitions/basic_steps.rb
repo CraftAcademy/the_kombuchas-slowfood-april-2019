@@ -7,3 +7,8 @@ Given("the following menu item exist") do |table|
         FactoryBot.create(:menu_item, item)
     end
 end
+
+When("I click on the {string} button") do |string|
+    first(:link, string).click
+  end
+  
