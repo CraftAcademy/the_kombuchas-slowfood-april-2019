@@ -9,3 +9,9 @@
     %p= menu_item.description
     %p= menu_item.price
     %p= menu_item.animal
+
+    /= This is a link helper "add_to_cart(product, quantity, button_name) to each menu item"
+    /= not sure how to connect to Order List yet
+    add_to_cart(menu_item.id, 1, button_name)
+
+
