@@ -18,3 +18,7 @@ Feature: Visitor can see a prodcut on the menu
         And I should see "Fresh, seared yellow tail tuna, served on a bed of catnip picked daily from our garden."
         And I should see "140"
         And I should see "cat"
+        And I should see "Missy Treat"
+        And I should see "Flaming oriental spiced noodles with chunks of chicken and mushrooms."
+        And I should see "85"
+        And I should see "cat"
