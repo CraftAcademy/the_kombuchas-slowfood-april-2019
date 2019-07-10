@@ -7,3 +7,7 @@ Given("the following menu item exist") do |table|
         FactoryBot.create(:menu_item, item)
     end
 end
+
+When("I click {string}") do |string|
+    pending # Write code here that turns the phrase above into concrete actions
+end
