@@ -1,0 +1,11 @@
+%h1 Kibbles and Bites
+
+%h2 Menu
+
+%h3 Kitty Appetizers
+
+- @menu_items.each do |menu_item|
+    %p= menu_item.name
+    %p= menu_item.description
+    %p= menu_item.price
+    %p= menu_item.animal
