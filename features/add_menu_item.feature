@@ -15,5 +15,5 @@ Feature: Visitor can add to order
         Then I should see "Current Order:"
         And I should see "Pupperoni"
         And I should see "Total"
-        Then I should see '100'
+        And I should see '100'
         And I should see "Proceed to checkout"

@@ -8,6 +8,10 @@ Given("the following menu item exist") do |table|
     end
 end
 
-When("I click on {string} on {string}") do |element, name|
-    first(:link, element).click
+When("I click on {string} on {string}") do |string, name|
+    first(:link, string).click
+end
+
+When("I should see {string}") do |content|
+    expect(page).to have_content content
 end

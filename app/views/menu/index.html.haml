@@ -16,16 +16,6 @@
 
 %hr
 
-
-
--# - if(@order_items != nil)
--#   - @order_items.each do |order_items|
--#     %p= order_item.quantity
--#     %p= order_item.unit_price
--#     %p= order_item.product_id
--# - else 
--#   = "Your cart is empty!"
-
 %h2 Order List
 %h3 Current Order:
 = render 'cartify/partials/list_of_items'
