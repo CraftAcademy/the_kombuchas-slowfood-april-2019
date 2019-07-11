@@ -16,10 +16,10 @@ animal = ['cat','dog','cat','dog','dog','dog','cat','cat','dog','cat']
 
 for i in names
     Product.create(
-        name: names[i]
-        description: description[i]
-        price: price[i]
-        category: category[i]
+        name: names[i],
+        description: description[i],
+        price: price[i],
+        category: category[i],
         animal: animal[i]
     )
 end
