@@ -5,14 +5,14 @@
 %h3 Kitty Appetizers
 %hr
 
-- @menu_items.each do |menu_item|
+- @products.each do |product|
   %ul
-    %strong= menu_item.name
-    %li= menu_item.description
-    %li= menu_item.price 
+    %strong= product.name
+    %li= product.description
+    %li= product.price 
     %span SEK
-    %li= menu_item.animal
-    = link_to(add_to_cart(menu_item, 1, 'Add to Order'))
+    %li= product.animal
+    = link_to(add_to_cart(product, 1, 'Add to Order'))
 
 %hr
 
@@ -22,7 +22,7 @@
   - @order_items.each do |order_items|
     %p= order_item.quantity
     %p= order_item.unit_price
-    %p= order_item.menuitem_id
+    %p= order_item.product_id
 - else 
   = "Your cart is empty!"
 
