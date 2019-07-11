@@ -11,10 +11,13 @@ description = ['Fresh, seared yellow tail tuna, served on a bed of catnip picked
     'Just like the title says!  Fresh milk from grass-fed dairy cows delivered daily from local farms.  Unpastuerized and unprocessed, just as nature intended!' 
     ]
 price = [140,100,100,90,160,90,130,150,90,100]
-category = ['Appetizer','Entree','Dessert']
+category = ['Appetizer','Appetizer','Appetizer','Appetizer','Entree','Entree','Entree','Entree','Dessert','Dessert']
 animal = ['cat','dog','cat','dog','dog','dog','cat','cat','dog','cat']
 
-for i in names
+menu = names.length
+items = 0
+
+if items < menu
     Product.create(
         name: names[i],
         description: description[i],
