@@ -19,11 +19,12 @@ items = 0
 
 if items < menu
     Product.create(
-        name: names[i],
-        description: description[i],
-        price: price[i],
-        category: category[i],
-        animal: animal[i]
+        name: names[items],
+        description: description[items],
+        price: price[items],
+        category: category[items],
+        animal: animal[items]
     )
+    items += 1
 end
 
