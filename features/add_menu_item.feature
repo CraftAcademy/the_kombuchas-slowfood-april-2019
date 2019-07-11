@@ -11,10 +11,8 @@ Feature: Visitor can add to order
         And I visit the site
 
     Scenario: Visitor adds an appetizer to their cart
-        Then I should see "Pupperoni"
-        Then I should see "Add to Order"
-        When I click on "Add to Order"
-        Then I should see "Current Order: "
+        When I click on "Add to Order" on "Pupperoni"
+        Then I should see "Current Order:"
         And I should see "Pupperoni"
         And I should see "Order Total"
         Then I should see '100'

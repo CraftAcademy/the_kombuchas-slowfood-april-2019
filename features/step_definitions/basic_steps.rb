@@ -8,6 +8,6 @@ Given("the following menu item exist") do |table|
     end
 end
 
-When("I click on {string}") do |string|
-    first(:link, string).click
+When("I click on {string} on {string}") do |element, name|
+    first(:link, element).click
 end
