@@ -1,11 +1,30 @@
-%h1 Kibbles and Bites
-
+%h1 Kibbles n' Bites
+%br
 %h2 Menu
-
+%hr
 %h3 Kitty Appetizers
+%hr
 
 - @menu_items.each do |menu_item|
-    %p= menu_item.name
-    %p= menu_item.description
-    %p= menu_item.price
-    %p= menu_item.animal
+  %ul
+    %strong= menu_item.name
+    %li= menu_item.description
+    %li= menu_item.price 
+    %span SEK
+    %li= menu_item.animal
+    = link_to(add_to_cart(menu_item, 1, 'Add to Order'))
+
+%hr
+
+
+
+- if(@order_items != nil)
+  - @order_items.each do |order_items|
+    %p= order_item.quantity
+    %p= order_item.unit_price
+    %p= order_item.menuitem_id
+- else 
+  = "Your cart is empty!"
+
+
+= link_to(checkout_link)
