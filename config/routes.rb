@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
-  resources :menu_items
-  root controller: :menu, action: :index
+  resources :products, only: [:show]
+  mount Cartify::Engine, at: '/'
+  devise_for :users
+  root controller: :product, action: :index
 end

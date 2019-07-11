@@ -1,0 +1,23 @@
+%h1 Kibbles n' Bites
+%br
+%h2 Menu
+%hr
+%h3 Kitty Appetizers
+%hr
+
+- @products.each do |product|
+  %ul
+    %strong= product.name
+    %li= product.description
+    %li= product.price 
+    %span €
+    %li= product.animal
+    = link_to(add_to_cart(product, 1, 'Add to Order'))
+
+%hr
+
+%h2 Order List
+%h3 Current Order:
+= render 'cartify/partials/list_of_items'
+
+= link_to(checkout_link)

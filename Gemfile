@@ -12,6 +12,12 @@ gem 'uglifier', '>= 1.3.0'
 gem 'turbolinks', '~> 5'
 gem 'bootsnap', '>= 1.1.0', require: false
 
+# Seth Cartify Installation, adding Cartify gem (CA doesn't specify where)
+gem 'cartify', github: 'CraftAcademy/cartify', branch: 'rails_5_2'
+
+# Seth Cartify Installation, adding Devise gem
+gem 'devise'
+
 
 group :development, :test do
   gem 'pry-byebug'
@@ -32,4 +38,5 @@ group :development do
   gem 'listen', '>= 3.0.5', '< 3.2'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  gem "rails-erd"
 end
