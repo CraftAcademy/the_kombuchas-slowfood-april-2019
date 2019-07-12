@@ -3,6 +3,7 @@ class User < ApplicationRecord
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
+  validates_presence_of :email, :encrypted_password
 
   # added per the cartify install instructions
   has_many :orders, class_name: 'Cartify::Order', foreign_key: :user_id
