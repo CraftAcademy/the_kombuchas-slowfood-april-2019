@@ -7,7 +7,7 @@ Feature: Food items are organized into categories on the menu
         Given the following menu item exist
             | name             | description                                                                                                                                                       | price   | category  | animal |
             | Kitty Heaven     | Fresh, seared yellow tail tuna, served on a bed of catnip picked daily from our garden.                                                                           | 140     | Appetizer | cat    |
-            | Phenomal Feline  | The ultimate indulgence for any creature of the feline persuasion!  Cedar plank smoked salmon with a light white cream sauce topped with capers and catnip puree. | 150     | Dessert   | cat    |
+            | Phenomenal Feline  | The ultimate indulgence for any creature of the feline persuasion!  Cedar plank smoked salmon with a light white cream sauce topped with capers and catnip puree. | 150     | Dessert   | cat    |
             | Pupperoni        | Dried free-range, grass-fed beef sausage seasoned with sage, fennel and coriander.                                                                                | 100     | Appetizer | dog    |
             | Just Steak       | A 12oz. prime ribeye steak grilled to your choice: Rare, Med. Rare, Medium or Well Done.                                                                          | 90      | Entree    | dog    |
         And I visit the site
