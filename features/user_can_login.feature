@@ -4,6 +4,9 @@ Feature: User can login in order to finalize her order
     I would like to be able to register an account
 
   Background:
+    Given the following user exists
+        | email             | password      | name    |
+        | feedme1@gmail.com | ilikecatfood  | Fat Bob |
     Given I click "Proceed to checkout"
 
   Scenario: User can login successfully
