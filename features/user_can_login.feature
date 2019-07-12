@@ -5,6 +5,7 @@ Feature: User can login in order to finalize her order
 
   Background:
     Given I visit the site
+    
 
   Scenario: User can login successfully
     When I click "Login"
