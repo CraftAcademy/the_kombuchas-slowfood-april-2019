@@ -11,7 +11,7 @@ Feature: Visitor can see a prodcut on the menu
         And I visit the site
 
     Scenario: [Happy Path] Visitor sees menu categories and item info
-        Then I should see "Kibbles and Bites"
+        Then I should see "Kibbles n' Bites"
         And I should see "Menu"
         And I should see "Kitty Appetizers"
         And I should see "Kitty Heaven"

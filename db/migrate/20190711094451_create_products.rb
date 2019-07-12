@@ -1,9 +1,10 @@
-class CreateMenuItems < ActiveRecord::Migration[5.2]
+class CreateProducts < ActiveRecord::Migration[5.2]
   def change
-    create_table :menu_items do |t|
+    create_table :products do |t|
       t.string :name
       t.text :description
       t.integer :price
+      t.string :category
       t.string :animal
 
       t.timestamps
