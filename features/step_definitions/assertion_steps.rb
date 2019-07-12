@@ -8,4 +8,4 @@ end
 
 Then("I click {string}") do |string|
     pending # User can login feature
-  end
+end

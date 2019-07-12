@@ -11,3 +11,9 @@ end
 When("I click on {string} on {string}") do |string, name|
     first(:link, string).click
 end
+
+Given("the following user exists") do |table|
+    table.hashes.each do |user|
+        FactoryBot.create(:user, user)
+    end
+end
