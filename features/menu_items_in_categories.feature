@@ -12,7 +12,7 @@ Feature: Food items are organized into categories on the menu
             | Just Steak       | A 12oz. prime ribeye steak grilled to your choice: Rare, Med. Rare, Medium or Well Done.                                                                          | 90      | Entree    | dog    |
         And I visit the site
 
-    Scenario:
+    Scenario: [Happy Path]
         Then I should see "Kibbles n' Bites"
         And I should see "Menu"
         And I should see "Appetizers"
