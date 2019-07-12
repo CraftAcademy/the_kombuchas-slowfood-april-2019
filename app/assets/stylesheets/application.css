@@ -14,3 +14,22 @@
 *= require_tree .
  *= require_self
  */
+
+.category-title {
+    text-align: center;
+}
+
+.category-container {
+    width: 100vw;
+    display: flex;
+}
+
+.category-left {
+    width: 30vw;
+    margin: 0 5vw 0 15vw;
+}
+
+.category-right {
+    width: 30vw;
+    margin: 0 15vw 0 5vw;
+}

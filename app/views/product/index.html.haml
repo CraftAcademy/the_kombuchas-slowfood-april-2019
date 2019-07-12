@@ -1,23 +1,98 @@
-%h1 Kibbles n' Bites
-%br
-%h2 Menu
-%hr
-%h3 Kitty Appetizers
-%hr
+.category-title
+  %h1 Kibbles n' Bites
+  %hr
 
-- @products.each do |product|
-  %ul
-    %strong= product.name
-    %li= product.description
-    %li= product.price 
-    %span €
-    %li= product.animal
-    = link_to(add_to_cart(product, 1, 'Add to Order'))
+.category-title
+  %h2 Menu
+  %hr
+
+.category-title
+  %h3 Appetizers
+
+.category-container
+  .category-left 
+    .category-title
+      %h3 Nice Kitties
+    - @products.each do |product|
+      - if product.animal === 'cat' && product.category === 'Appetizer'
+        %p 
+          %strong= product.name
+        %p
+          %i= product.description
+        %p= "#{product.price} SEK"
+        %p= link_to(add_to_cart(product, 1, 'Add to Order'))
+
+  .category-right
+    .category-title
+      %h3 Good Dogs
+    - @products.each do |product|
+      - if product.animal === 'dog' && product.category === 'Appetizer'
+        %p
+          %strong= product.name
+        %p
+          %i= product.description
+        %p= "#{product.price} SEK"
+        %p= link_to(add_to_cart(product, 1, 'Add to Order'))
+
+.category-title
+  %h3 Entrees
+
+.category-container
+  .category-left
+    .category-title
+      %h3 Nice Kitties
+    - @products.each do |product|
+      - if product.animal === 'cat' && product.category === 'Entree'
+        %p
+          %strong= product.name
+        %p
+          %i= product.description
+        %p= "#{product.price} SEK"
+        %p= link_to(add_to_cart(product, 1, 'Add to Order'))
+
+  .category-right
+    .category-title
+      %h3 Good Dogs
+    - @products.each do |product|
+      - if product.animal === 'dog' && product.category === 'Entree'
+        %p
+          %strong= product.name
+        %p
+          %i= product.description
+        %p= "#{product.price} SEK"
+        %p= link_to(add_to_cart(product, 1, 'Add to Order'))
+
+.category-title
+  %h3 Desserts
+
+.category-container
+  .category-left
+    .category-title
+      %h3 Nice Kitties
+    - @products.each do |product|
+      - if product.animal === 'cat' && product.category === 'Dessert'
+        %p
+          %strong= product.name
+        %p
+          %i= product.description
+        %p= "#{product.price} SEK"
+        %p= link_to(add_to_cart(product, 1, 'Add to Order'))
+
+  .category-right
+    .category-title
+      %h3 Good Dogs
+    - @products.each do |product|
+      - if product.animal === 'dog' && product.category === 'Dessert'
+        %p
+          %strong= product.name
+        %p
+          %i= product.description
+        %p= "#{product.price} SEK"
+        %p= link_to(add_to_cart(product, 1, 'Add to Order'))
 
 %hr
-
-%h2 Order List
-%h3 Current Order:
-= render 'cartify/partials/list_of_items'
+.category-title
+  %h2 Current Order
+= render 'cartify/partials/list_of_items_copy'
 
 = link_to(checkout_link)
